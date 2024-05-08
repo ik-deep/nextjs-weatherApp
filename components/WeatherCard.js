@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useDate } from '../Utils/useDate'
 
 
+
 const WeatherCard = ({
   temperature,
   windspeed,
@@ -13,7 +14,7 @@ const WeatherCard = ({
   conditions,
 }) => {
 
-  const [icon, setIcon] = useState('/icons/sun.png')
+  const [icon, setIcon] = useState()
   const { time } = useDate()
 
   useEffect(() => {

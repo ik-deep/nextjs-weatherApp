@@ -1,5 +1,6 @@
 import React from 'react'
-import Home from './Home'
+import Home from './home'
+
 
 const index = () => {
   return (
