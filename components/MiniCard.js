@@ -7,13 +7,13 @@ const MiniCard = ({ time, temp, iconString }) => {
     if (iconString) {
       if (iconString.toLowerCase().includes('rain') || iconString.toLowerCase().split(',')[0].includes('rain')) {
         setIcon('/icons/rain.png')
-      }else if (iconString.toLowerCase().includes('cloud' || 'cloudy')) {
+      }else if (iconString.toLowerCase().includes('cloud') || iconString.toLowerCase().includes('cloudy')) {
         setIcon('/icons/cloud.png')
       } else if (iconString.toLowerCase().includes('clear')) {
         setIcon('/icons/sun.png')
       } else if (iconString.toLowerCase().includes('thunder')) {
         setIcon('/icons/storm.png')
-      } else if (iconString.toLowerCase().includes('fog')) {
+      } else if (iconString.toLowerCase().includes('fog') || iconString.toLowerCase().includes('overcast')) {
         setIcon('/icons/fog.png')
       } else if (iconString.toLowerCase().includes('snow')) {
         setIcon('/icons/snow.png')

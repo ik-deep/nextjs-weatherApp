@@ -26,7 +26,7 @@ import Head from "next/head";
     } catch(error){
       console.log(error)
     }
-  },[city])
+  },[])
 
 
   const handleSubmit = (e) => {
